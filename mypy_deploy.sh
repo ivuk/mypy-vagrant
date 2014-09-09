@@ -11,7 +11,7 @@ apt-get -qq update
 apt-get -qq install python3 git
 
 # Clone the mypy repository from GitHub
-su - vagrant -c "git clone https://github.com/JukkaL/mypy.git"
+su - vagrant -c "git clone --quiet https://github.com/JukkaL/mypy.git"
 
 # Install mypy
 cd mypy && python3 setup.py install
